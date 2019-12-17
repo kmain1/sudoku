@@ -32,6 +32,10 @@ def play():
         else:
             try_move(move)
         tmp = sp.call('clear',shell=True)
+    
+    if(board_solved):
+        print_board(board)
+        input("Congratulations!  [ENTER]")
 
 def solve_board():
     global board
